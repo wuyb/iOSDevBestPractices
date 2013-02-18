@@ -24,7 +24,7 @@
       <div id="banner">
         <span id="logo"></span>
 
-        <a href="https://github.com/wuyb/iOSDevBestPractices" class="button fork"><strong>Help To Improve</strong></a>
+        <a href="https://github.com/wuyb/iOSDevBestPractices/tree/gh-pages" class="button fork"><strong>Help To Improve</strong></a>
 <!--
         <div class="downloads">
           <span>Downloads:</span>
@@ -40,6 +40,17 @@
       <nav>
         <ul></ul>
       </nav>
+
+      <section>
+        <h1>General Practice</h1>
+        <h2>NSObject</h2>
+        <ul>
+          <li>Singleton<br/>
+            Use <code>+initialize</code> to initialize a singleton. This method will only be called once for the lifecycle of a class and it is called in a thread-safe way. So you don't need to worry of thread-safety. [<a href="http://stackoverflow.com/questions/145154/what-should-my-objective-c-singleton-look-like">ref</a>]
+          </li>
+        </ul>
+      </section>
+
       <section>
         <h1>UI</h1>
 
@@ -50,16 +61,6 @@
         Edge insets is the official answer[<a href="http://developer.apple.com/library/ios/DOCUMENTATION/UIKit/Reference/UIButton_Class/UIButton/UIButton.html#//apple_ref/doc/uid/TP40006815-CH3-SW31">ref</a>]. But it will be troublesome if you have to deal with a lot of buttons with a specific pattern. A better solution is to subclass UIButton and override the <code>layoutSubviews</code> method. [<a href="http://stackoverflow.com/questions/2515998/iphone-uibutton-image-position">ref</a>]</li>
         </ul>
       </section>
-
-<section>
-  <h1>General Practice</h1>
-  <h2>NSObject</h2>
-  <ul>
-    <li>Singleton<br/>
-      Use <code>+initialize</code> to initialize a singleton. This method will only be called once for the lifecycle of a class and it is called in a thread-safe way. So you don't need to worry of thread-safety. [<a href="http://stackoverflow.com/questions/145154/what-should-my-objective-c-singleton-look-like">ref</a>]
-    </li>
-  </ul>
-</section>
 
       <footer>
         <p>Project maintained by <a href="https://github.com/wuyb">wuyb</a></p>
